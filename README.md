@@ -1,6 +1,5 @@
 # wsus-privoxy
-
-A Privoxy service that only services Windows Update.
+Privoxy service that only serves Windows Update.
 
 # Setup
 
