@@ -1,0 +1,13 @@
+{-block \
+}
+*.wikipedia.org/
+download.windowsupdate.com/
+*.download.windowsupdate.com/
+download.microsoft.com/
+*.update.microsoft.com/
+update.microsoft.com/
+*.windowsupdate.com/
+*.windowsupdate.microsoft.com/
+windowsupdate.microsoft.com/
+ntservicepack.microsoft.com/
+wustat.windows.com/

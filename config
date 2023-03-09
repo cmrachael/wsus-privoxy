@@ -1,0 +1,5 @@
+listen-address 0.0.0.0:8118
+
+confdir /etc/privoxy
+actionsfile match-all.action 
+actionsfile default.action
