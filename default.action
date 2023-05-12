@@ -11,3 +11,7 @@ update.microsoft.com/
 windowsupdate.microsoft.com/
 ntservicepack.microsoft.com/
 wustat.windows.com/
+go.microsoft.com/
+*.go.microsoft.com/
+dl.delivery.mp.microsoft.com/
+*.delivery.mp.microsoft.com/
