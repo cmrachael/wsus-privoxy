@@ -4,7 +4,7 @@ logdir /var/log/privoxy
 logfile logfile
 
 debug 1
-debug 32
+debug 1024
 debug 8192
 
 confdir /etc/privoxy
