@@ -1,5 +1,10 @@
 listen-address 0.0.0.0:8118
 
+logfile /var/log/privoxy/logfile
+debug 1   # Log the startup of the Privoxy main process.
+debug 32  # Log outgoing connections.
+debug 8192 # Log all requests as received and whether they are blocked or redirected.
+
 confdir /etc/privoxy
 actionsfile match-all.action 
 actionsfile default.action
