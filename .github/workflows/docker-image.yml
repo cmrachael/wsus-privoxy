@@ -1,0 +1,20 @@
+name: Build and push docker image
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Log in to Docker Hub
+      run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
+      
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v1
+      
+    - name: Build the Docker image
+      run: |
+        docker build --platform linux/amd64 -t wsus-privoxy .
+        docker tag wsus-privoxy cmrachael/wsus-privoxy:latest
+        docker push cmrachael/wsus-privoxy:latest
