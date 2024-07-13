@@ -1,5 +1,7 @@
 listen-address 0.0.0.0:8118
 
+enable-edit-actions 1
+
 logdir /var/log/privoxy
 logfile logfile
 
